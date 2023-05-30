@@ -3,13 +3,13 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity('despesas')
 export class Despesa {
   @PrimaryGeneratedColumn()
-  id!: number;
+  id_desp!: number;
 
   @Column()
   descricao!: string;
 
   @Column()
-  data!: Date;
+  data_desp!: Date;
 
   @Column()
   data_efetivacao!: Date;
